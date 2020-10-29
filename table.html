@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Details</title>
+        <link rel="stylesheet" href="tables.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="table.js"></script>
+
+        
+    </head>
+
+    <body>
+        
+        <fieldset class="fldset" >
+            <div class="center">
+                <h1> Aexonic Employee Details</h1>
+            </div>
+            <!--<legend class="wid"></legend>-->
+            <table align="center">
+                <tr>
+                    <td class="emphover">
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="on">
+                            <div>
+                                <label >Employee Name</label>
+                                <input class="input-field" type="text" name="txtemane" id="ename" autofocus placeholder="Enter name" required>
+                            </div> 
+                            <div>
+                                <label>Employee ID</label>
+                                <input type="number" name="txtempid" id="empid" placeholder="Enter employee ID" required>
+                            </div>
+                            <div>
+                                <label>Designation</label>
+                                <input type="text" name="txtdesig" id="desig" placeholder="Enter designation" required>
+                            </div>
+                            <div>
+                                <label>Salary</label>
+                                <input type="number" name="txtsalary" id="salary" placeholder="salary" min="1000" max="30000" required>
+                            </div>
+                            <div>
+                                <label>City</label>
+                                <input type="text" name="txtcity" id="city" placeholder="Enter City" required>
+                            </div>
+                            <div align="center"><a href="recordTable.html">
+                                <button type="submit" value="Submit" id="submit" title="submit">Submit</button></a>
+                            </div>
+                        </form> 
+                    </td>
+                </tr>
+            </table>
+        
+        <br>
+        <table align="center">
+            <tr>
+                <td>
+                    <table class="content-table1" id="empdetails">
+                        <thead>
+                            <tr class="etr">
+                                <th>Employee Name</th>
+                                <th>Employee ID</th>
+                                <th>Designation</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody" id="tcopy">
+
+                        </tbody>
+                    </table>
+                </td>
+            <tr>
+        </table>
+    </fieldset>
+    </body>
+</html>

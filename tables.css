@@ -1,0 +1,108 @@
+.center{
+    text-align: center;
+    padding-top: 2%;
+    color:black;
+    font-size:16;
+}
+
+body{
+    font: bold;
+    background-color: lightgray;
+    padding-top: 2%;
+    padding-left: 5%;
+}
+
+.content-table{
+    font-size: 16;
+    color:black;
+    margin-left:auto; 
+    margin-right:auto;
+    font: bold;
+}
+
+#submit{
+    background-color:rgb(21, 129, 236);
+    height: 40px;
+    width: 400px;
+    font: bolder;    
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    justify-content: safe;
+    border: 2px solid rgb(92, 92, 92);
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.table{
+    position: absolute;
+}
+.content-table1{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 700px;
+    border-radius: 5px;
+    font-size: 16;
+    overflow: hidden;
+    /*box-shadow: 0 0 20 rgba(0, 0, 0, 0.15);*/
+    background-color: #dddddd;
+    
+    color:black;
+    /* margin-left:auto; 
+    margin-right:auto; */
+}
+
+.content-table1 th, .content-table1 td{
+    padding: 12px 15px;
+}
+.content-table1 th{
+    background-color: whitesmoke;
+    color:black;
+}
+
+.content-table1 tbody tr{
+    border-bottom: 1px solid black;
+}
+
+.content-table1 tbody tr:nth-of-type(even){
+    background-color: #ffffff;
+}
+
+.content-table1 tbody tr:last-of-type{
+    border-bottom: 2px solid #1c1d1d;
+} 
+
+.emphover.hover{
+    background-color: darkgray;
+}
+
+.fldset{
+    background-color: white;
+    width: 30%;
+    border-radius: 10px;
+    
+} 
+
